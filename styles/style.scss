@@ -1,0 +1,10 @@
+@import "mixins";
+
+.list-restaurant-cards-img{
+    height: 400px;
+    width: 600px; 
+}
+
+.footer {
+@include footer;
+}
