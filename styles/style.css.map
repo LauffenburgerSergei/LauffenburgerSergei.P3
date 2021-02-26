@@ -1,1 +1,10 @@
-{"version":3,"sources":["style.scss","mixins.scss"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,YAAA;AADJ;;AAIA;ECNI,mBAAA;EACA,wBAAA;EACA,YAAA;ADMJ","file":"style.css"}
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,0BAA0B,CAAA;EACtB,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;CACf;;AAED,AAAA,cAAc,CAAA;EACV,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;CACf;;AAED,AAAA,OAAO,CAAC;ECXJ,SAAS,EAAE,QAAQ;EACnB,gBAAgB,EAAE,MAAM;EACxB,KAAK,EAAE,KAAK;CDWf",
+    "sources": [
+        "style.scss",
+        "mixins.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
