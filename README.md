@@ -1,40 +1,41 @@
 # P3_LAUFFENBURGER_Sergei
 <p>Ce projet 3 est effectué dans le cadre de ma formation développeuse web chez OpenClassrooms.</p>
-<p>Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration.
-L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques.
+<p>Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration.<br>
+L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques.<br>
 En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée.
 Finis, les temps d'attente au restaurant !</p>
-<p>Identité graphique:
+<p>Identité graphique:<br>
 Polices:
 Logo et titres: Shrikhand
 Texte: Roboto</p>
-<p>Couleur primaire: #9356DC
-Couleur secondaire: #FF79DA
+<p>Couleur primaire: #9356DC<br>
+Couleur secondaire: #FF79DA<br>
 Couleur tertiaie: #992D0</p>
-<p>Technologies:
-Le développement est fait en CSS, sans Javascript, aucun framekwork utilisé.
-L'utilisation de SASS est un plus.
+<p>Technologies:<br>
+Le développement est fait en CSS, sans Javascript, aucun framekwork utilisé.<br>
+L'utilisation de SASS est un plus.<br>
 Aucun code CSS dans une balise HTML.</p>
-<p>Compatibilité:
-Approche mobile-first
-Mise en page libre sur tablette et desktop</p>
-<p>Contenu des pages:
+<p>Compatibilité:<br>
+Approche mobile-first<br>
+Mise en page libre sur tablette et desktop</p><br>
+<p>Contenu des pages:<br>
+  <br>
 Page d'accueil:</p>
 <ul>
 <li>Affichage de la localisation des restaurants. Possibilité de choisir sa localisation pour trouver des restaurants proches.</li>
 <li>Une courte présentation de l'entreprise</li>
 <li>Dans la section contenant 4 menus sous forme de carte, au clic sur la carte, l'urilisateur est redirigé vers la page du menu</li>
-</ul>
+</ul><br>
 <p>Header:</p>
 <ul>
 <li>présent sur toutes les pages</li>
 <li>sur la page d'accueil il contient le logo</li>
 <li>sur les pages de menu, il contient en plus un bouton de retour vers la page d'accueil</li>
 </ul>
-<p>Effets graphiques et animations:<br>
-Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils devront utiliser
-les animations ou transitions CSS, pas de JavaScript ni de librairie.<br>
-Boutons:<br>
+<p>Effets graphiques et animations:<br><br>
+● Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils devront utiliser
+les animations ou transitions CSS, pas de JavaScript ni de librairie.<br><br>
+Boutons:<br><br>
 ● Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir.
 L’ombre portée devra également être plus visible.<br>
 ● À terme, les visiteurs pourront sauvegarder leurs menus préférés. Pour ça, un
