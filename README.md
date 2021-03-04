@@ -25,7 +25,7 @@ Page d'accueil:</p>
 <li>Une courte présentation de l'entreprise</li>
 <li>Dans la section contenant 4 menus sous forme de carte, au clic sur la carte, l'urilisateur est redirigé vers la page du menu</li>
 </ul>
-<p>Header:</p>
+<p text-decoration: underline;>Header:</p>
 <ul>
 <li>présent sur toutes les pages</li>
 <li>sur la page d'accueil il contient le logo</li>
