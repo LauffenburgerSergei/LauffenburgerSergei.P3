@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,oBAAoB;CACpC",
+    "mappings": ";AECA,qEAAqE;AACrE,qEAAqE;AACrE,qEAAqE;AAKrE,qEAAqE;AACrE,qEAAqE;AACrE,qEAAqE;AAE5B,2BAA2B;AAC3B,yBAAyB;AACzB,kCAAkC;AAClC,4CAA4C;AAC5C,mDAAmD;AACnD,SAAS;AACT,yCAAyC;AACzC,6BAA6B;AAC7B,QAAQ;AACR,kGAAkG;AFlB3I,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,MAAM,EAAE,CAAC;CACZ;;AACD,AAAA,YAAY,CAAC;ECXT,gBAAgB,EAAE,GAAG;CDaxB",
     "sources": [
-        "global.scss"
+        "global.scss",
+        "../sass/utils/mixins.scss",
+        "../sass/utils/variables.scss"
     ],
     "names": [],
     "file": "global.css"

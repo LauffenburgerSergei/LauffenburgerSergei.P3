@@ -1,9 +1,36 @@
+@charset "UTF-8";
+/* ################################################################*/
+/* ############################ Police ############################*/
+/* ################################################################*/
+/* ################################################################*/
+/* ########################### Couleurs ###########################*/
+/* ################################################################*/
+/*violet pour les boutons*/
+/*rose pour les boutons*/
+/*rose clair pour fonctionnement*/
+/*vert pour le fond des étiquettes nouveau*/
+/*vert foncé pour le texte des étiquettes nouveau*/
+/*blanc*/
+/*gris clair pour la recherche de ville*/
+/*gris foncé pour le footer*/
+/*noir*/
+/*blanc cassé pour la partie avec les textes juste au dessus du bouton "explorer nos restaurants*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.header-logo {
+  background-color: red;
 }
 /*# sourceMappingURL=global.css.map */

@@ -1,10 +1,15 @@
-
+@import "../sass/utils/mixins.scss";
+@import "../sass/utils/variables.scss"; 
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
-
+.header-logo {
+@include header-logo
+}
