@@ -1,3 +1,10 @@
-@mixin header-logo {
-    background-color: red;
+@mixin origin-position {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin img-size {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
