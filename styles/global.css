@@ -15,6 +15,95 @@
 /*gris foncé pour le footer*/
 /*noir*/
 /*blanc cassé pour la partie avec les textes juste au dessus du bouton "explorer nos restaurants*/
+/*heart*/
+@-webkit-keyframes full-scale {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  95% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes full-scale {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  95% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes detail {
+  from, 95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes detail {
+  from, 95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.heart {
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 2rem;
+  position: relative;
+}
+
+.heart .fas {
+  color: #9356DC;
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.heart:hover > .fas {
+  -webkit-animation: full-scale 500ms 100ms forwards;
+          animation: full-scale 500ms 100ms forwards;
+}
+
+.heart:hover > .far {
+  -webkit-animation: detail 500ms 100ms forwards;
+          animation: detail 500ms 100ms forwards;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -289,6 +378,9 @@ a {
 }
 
 .container .index .restaurant .list-restaurant .list-restaurant-card .list-restaurant-card-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -298,6 +390,7 @@ a {
 }
 
 .container .index .restaurant .list-restaurant .list-restaurant-card .card-new {
+  right: 14px;
   border-radius: 3px;
   background-color: #99E2D0;
   color: #23644e;
@@ -313,7 +406,7 @@ a {
   width: 80px;
   height: 30px;
   position: absolute;
-  top: 10px;
+  top: 14px;
 }
 
 .container .index .restaurant .list-restaurant .list-restaurant-card .list-restaurant-card-name {
@@ -326,26 +419,21 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60px;
   width: 90%;
   margin-left: 0.5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 10px;
 }
 
 .container .index .restaurant .list-restaurant .list-restaurant-card .list-restaurant-card-name > a {
   width: 80%;
 }
 
-.container .index .restaurant .list-restaurant .list-restaurant-card .list-restaurant-card-name > a > h3 p {
-  margin: 0;
-}
-
-.container .index .restaurant .list-restaurant .list-restaurant-card .list-restaurant-card-name .heart {
-  margin-right: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+.container .index .restaurant .list-restaurant .list-restaurant-card .list-restaurant-card-name > a h3,
+.container .index .restaurant .list-restaurant .list-restaurant-card .list-restaurant-card-name > a p {
+  margin: 0%;
+  margin-top: 5px;
 }
 /*# sourceMappingURL=global.css.map */

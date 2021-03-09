@@ -1,0 +1,24 @@
+/*heart*/
+
+@keyframes full-scale {
+	from {
+		transform: scale(0);
+		animation-timing-function: ease-in-out;
+	}
+	95% {
+		transform: scale(1.1);
+		animation-timing-function: ease-in-out;
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes detail {
+	from, 95% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
