@@ -271,7 +271,7 @@ a {
   .footer {
     background-color: $colour-dark;
     color: white;
-    padding: 1.5rem 0 1.5rem 1.5rem;
+    padding: 1.5rem 0 3rem 1.5rem;
 
     .footer-title {
       display: flex;
@@ -288,7 +288,7 @@ a {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      
+
       .fas {
         margin-right: 0.5rem;
         font-size: 1rem;
