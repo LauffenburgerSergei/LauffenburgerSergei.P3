@@ -258,10 +258,58 @@ a {
                 margin-top: 5px;
               }
             }
-
-            
           }
         }
+      }
+    }
+  }
+
+  /*######################################################################*/
+  /*##############################  Footer  ##############################*/
+  /*######################################################################*/
+
+  .footer {
+    background-color: $colour-dark;
+    color: white;
+    padding: 1.5rem 0 1.5rem 1.5rem;
+
+    .footer-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: $Shrikand-font;
+      font-size: 1.25rem;
+      height: 35px;
+      margin-right: 10px;
+      letter-spacing: 1.3px;
+    }
+
+    .partner-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      
+      .fas {
+        margin-right: 0.5rem;
+        font-size: 1rem;
+      }
+      p {
+        margin: 0.5rem 0 0 0;
+        text-align: justify;
+      }
+    }
+
+    .mentions-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      & > a {
+        color: white;
+        text-decoration: none;
+      }
+      p {
+        margin: 0.5rem 0 0 0;
       }
     }
   }
