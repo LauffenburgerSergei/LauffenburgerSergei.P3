@@ -76,9 +76,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   font-size: 2rem;
   position: relative;
 }
@@ -137,7 +134,10 @@ a {
   /*##############################  Footer  ##############################*/
   /*######################################################################*/
   /*######################################################################*/
-  /*############################  Header menu ############################*/
+  /*############################## header menu ###########################*/
+  /*######################################################################*/
+  /*######################################################################*/
+  /*############################## header menu ###########################*/
   /*######################################################################*/
 }
 
@@ -508,5 +508,155 @@ a {
 
 .container .footer .mentions-footer p {
   margin: 0.5rem 0 0 0;
+}
+
+.container .arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: black;
+}
+
+.container .main-restaurant .img-card-menu {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 310px;
+}
+
+.container .main-restaurant .menu-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 30px 30px 0 0;
+  margin-top: -3.5rem;
+}
+
+.container .main-restaurant .menu-card .title-menu-card {
+  font-family: "Shrikhand", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 1rem;
+}
+
+.container .main-restaurant .menu-card .title-menu-card > h2 {
+  margin-top: 25px;
+  width: 85%;
+}
+
+.container .main-restaurant .menu-card .title-menu-card .heart {
+  margin-bottom: 25px;
+  width: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 15%;
+}
+
+.container .main-restaurant .menu-card .menu-card-dish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 1rem;
+}
+
+.container .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #888888;
+  margin-bottom: 0.5rem;
+}
+
+.container .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-title:hover {
+  cursor: pointer;
+  border-bottom: 3px solid #99e2d0;
+}
+
+.container .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto 1rem auto;
+  height: 70px;
+  border-radius: 20px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .description > h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.container .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .description > p {
+  font-size: smaller;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.container .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .description .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 0.5rem;
 }
 /*# sourceMappingURL=global.css.map */

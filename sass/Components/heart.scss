@@ -1,12 +1,11 @@
 .heart {
     margin-right: 1rem;
     display: flex;
-    justify-content: flex-end;
     font-size: 2rem;
     position: relative;
 
     .fas {
-      color: $colour-primary;
+      color: #9356DC;
       position: absolute;
       left: 0;
       top: 0.15rem;

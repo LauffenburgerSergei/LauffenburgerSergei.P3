@@ -23,12 +23,11 @@
   <body>
     <div class="container">
       <!--Header-->
-      <header>
-        <div>
-          <a href="index.html"
-            ><i class="fas fa-arrow-left"></i></a>
+      <header class="header-index">
+        <div class="arrow">
+          <a href="index.html"><i class="fas fa-arrow-left"></i></a>
         </div>
-        <div class="header-Logo">ohmyfood</div>
+        <div class="header-logo">ohmyfood</div>
       </header>
       <!--Header-->
       <!--main-->
@@ -36,14 +35,15 @@
         <div
           class="img-card-menu"
           style="
-            background-image: url(./Assets/images/restaurants/small/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.webp);
+            background-image: url(./Assets/images/restaurants/normal/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
           "
         ></div>
         <div class="menu-card">
           <div class="title-menu-card">
             <h2>Le Délice des sens</h2>
-            <div>
+            <div class="heart">
               <i class="far fa-heart"></i>
+              <i class="fas fa-heart"></i>
               <!--coeur qui change de couleur-->
             </div>
           </div>
@@ -51,7 +51,7 @@
             <div class="menu-card-dish-column">
               <div class="menu-card-dish-column-title">ENTRÉES</div>
               <div class="menu-card-dish-column-choice">
-                <div>
+                <div class="description-price">
                   <div class="description">
                     <h3>Tartar de thon</h3>
                     <p>Assaisonné au yuzu</p>
@@ -61,7 +61,7 @@
                 <div class="#"><i class="#"></i></div>
               </div>
               <div class="menu-card-dish-column-choice">
-                <div>
+                <div class="description-price">
                   <div class="description">
                     <h3>Bouchée de homard croustillant</h3>
                     <p>Et sa farandole de petits légumes</p>
@@ -71,7 +71,7 @@
                 <div class="#"><i class="#"></i></div>
               </div>
               <div class="menu-card-dish-column-choice">
-                <div>
+                <div class="description-price">
                   <div class="description">
                     <h3>Velouté de cèpes</h3>
                     <p>Aux truffes</p>
@@ -85,7 +85,7 @@
             <div class="menu-card-dish-column">
               <div class="menu-card-dish-column-title">PLATS</div>
               <div class="menu-card-dish-column-choice">
-                <div>
+                <div class="description-price">
                   <div class="description">
                     <h3>Poulet rôti aux herbes de provence</h3>
                     <p>Et sa crème de truffe</p>
@@ -95,7 +95,7 @@
                 <div class="#"><i class="#"></i></div>
               </div>
               <div class="menu-card-dish-column-choice">
-                <div>
+                <div class="description-price">
                   <div class="description">
                     <h3>Langouste rôti</h3>
                     <p>Et ses légumes de saison</p>
@@ -105,7 +105,7 @@
                 <div class="#"><i class="#"></i></div>
               </div>
               <div class="menu-card-dish-column-choice">
-                <div>
+                <div class="description-price">
                   <div class="description">
                     <h3>Côte de boeuf Angus</h3>
                     <p>Et sa purée de panais</p>
@@ -117,42 +117,41 @@
             </div>
 
             <div class="menu-card-dish-column"></div>
-              <div class="menu-card-dish-column-title">DESSERTS</div>
-              <div class="menu-card-dish-column-choice">
-                <div>
-                  <div class="description">
-                    <h3>Farandole de desserts</h3>
-                    <p>Du chef</p>
-                  </div>
-                  <div class="price">18€</div>
+            <div class="menu-card-dish-column-title">DESSERTS</div>
+            <div class="menu-card-dish-column-choice">
+              <div class="description-price">
+                <div class="description">
+                  <h3>Farandole de desserts</h3>
+                  <p>Du chef</p>
                 </div>
-                <div class="#"><i class="#"></i></div>
+                <div class="price">18€</div>
               </div>
-              <div class="menu-card-dish-column-choice">
-                <div>
-                  <div class="description">
-                    <h3>Crème brulée</h3>
-                    <p>Revisitée</p>
-                  </div>
-                  <div class="price">22€</div>
+              <div class="#"><i class="#"></i></div>
+            </div>
+            <div class="menu-card-dish-column-choice">
+              <div class="description-price">
+                <div class="description">
+                  <h3>Crème brulée</h3>
+                  <p>Revisitée</p>
                 </div>
-                <div class="#"><i class="#"></i></div>
+                <div class="price">22€</div>
               </div>
-              <div class="menu-card-dish-column-choice">
-                <div>
-                  <div class="description">
-                    <h3>Tiramisu</h3>
-                    <p>A la noisette</p>
-                  </div>
-                  <div class="price">23€</div>
+              <div class="#"><i class="#"></i></div>
+            </div>
+            <div class="menu-card-dish-column-choice">
+              <div class="description-price">
+                <div class="description">
+                  <h3>Tiramisu</h3>
+                  <p>A la noisette</p>
                 </div>
-                <div class="#"><i class="#"></i></div>
+                <div class="price">23€</div>
               </div>
+              <div class="#"><i class="#"></i></div>
             </div>
           </div>
-          <div id="container-order">
-            <button class="order-button">Commander</button>
-          </div>
+        </div>
+        <div id="container-order">
+          <button class="order-button">Commander</button>
         </div>
       </main>
       <!--main-->

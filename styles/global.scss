@@ -315,9 +315,114 @@ a {
   }
 
   /*######################################################################*/
-  /*############################  Header menu ############################*/
+  /*############################## header menu ###########################*/
   /*######################################################################*/
 
-  
+  .arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: black;
+  }
 
+  /*######################################################################*/
+  /*############################## header menu ###########################*/
+  /*######################################################################*/
+
+  .main-restaurant {
+    .img-card-menu {
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 310px;
+    }
+    .menu-card {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: $colour-grey-little;
+      border-radius: 30px 30px 0 0;
+      margin-top: -3.5rem;
+
+      .title-menu-card {
+        font-family: $Shrikand-font;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-left: 1rem;
+
+        > h2 {
+          margin-top: 25px;
+          width: 85%;
+        }
+
+        .heart {
+          margin-bottom: 25px;
+          width: 100%;
+          align-items: flex-end;
+          width: 15%;
+        }
+      }
+      .menu-card-dish {
+        display: flex;
+        flex-direction: column;
+
+        .menu-card-dish-column {
+          display: flex;
+          flex-direction: column;
+          padding: 0 1rem;
+
+          .menu-card-dish-column-title {
+            width: fit-content;
+            color: #888888;
+            margin-bottom: 0.5rem;
+            &:hover {
+              cursor: pointer;
+              border-bottom: 3px solid #99e2d0;
+            }
+          }
+
+          .menu-card-dish-column-choice {
+            background-color: $colour-white;
+            display: flex;
+            margin: 0 auto 1rem auto;
+            height: 70px;
+            border-radius: 20px;
+            width: 100%;
+
+            justify-content: space-between;
+
+            .description-price {
+              display: flex;
+              justify-content: space-between;
+
+              .description {
+                > h3 {
+                  display: flex;
+                  margin: 0;
+                }
+
+                > p {
+                  font-size: smaller;
+                  display: flex;
+                  margin: 0;
+                }
+
+                .price {
+                  display: flex;
+                  justify-content: center;
+                  align-items: flex-end;
+                  margin-bottom: 0.5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
