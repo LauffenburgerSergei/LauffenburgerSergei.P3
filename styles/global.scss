@@ -243,184 +243,206 @@ a {
             position: absolute;
             top: 14px;
           }
-          .list-restaurant-card-name {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 90%;
-            margin-left: 0.5rem;
-            height: fit-content;
-            margin-top: 10px;
+          &:hover {
+            .card-new {
+              animation: full-scale 500ms 200ms forwards;
+            }
+          }
+        }
+        .list-restaurant-card-name {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 90%;
+          margin-left: 0.5rem;
+          height: fit-content;
+          margin-top: 10px;
 
-            & > a {
-              width: 80%;
+          & > a {
+            width: 80%;
 
-              h3,
-              p {
-                margin: 0%;
-                margin-top: 5px;
-              }
+            h3,
+            p {
+              margin: 0%;
+              margin-top: 5px;
             }
           }
         }
       }
     }
   }
+}
 
-  /*######################################################################*/
-  /*##############################  Footer  ##############################*/
-  /*######################################################################*/
+/*######################################################################*/
+/*##############################  Footer  ##############################*/
+/*######################################################################*/
 
-  .footer {
-    background-color: $colour-dark;
-    color: white;
-    padding: 1.5rem 0 3rem 1.5rem;
+.footer {
+  background-color: $colour-dark;
+  color: white;
+  padding: 1.5rem 0 3rem 1.5rem;
 
-    .footer-title {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+  .footer-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: $Shrikand-font;
+    font-size: 1.25rem;
+    height: 35px;
+    margin-right: 10px;
+    letter-spacing: 1.3px;
+  }
+
+  .partner-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .fa-utensils {
+      margin-left: 7px;
+    }
+    .fas {
+      margin-right: 0.5rem;
+      font-size: 1rem;
+    }
+    p {
+      margin: 0.5rem 0 0 0;
+      text-align: justify;
+    }
+  }
+
+  .mentions-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    & > a {
+      color: white;
+      text-decoration: none;
+    }
+    p {
+      margin: 0.5rem 0 0 0;
+    }
+  }
+}
+
+/*######################################################################*/
+/*############################## header menu ###########################*/
+/*######################################################################*/
+
+.arrow {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: black;
+}
+
+/*######################################################################*/
+/*############################## header menu ###########################*/
+/*######################################################################*/
+
+.main-restaurant {
+  .img-card-menu {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 310px;
+  }
+  .menu-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $colour-grey-little;
+    border-radius: 30px 30px 0 0;
+    margin-top: -3.5rem;
+
+    .title-menu-card {
       font-family: $Shrikand-font;
-      font-size: 1.25rem;
-      height: 35px;
-      margin-right: 10px;
-      letter-spacing: 1.3px;
-    }
-
-    .partner-footer {
       display: flex;
-      flex-direction: column;
-      justify-content: space-around;
+      flex-direction: row;
+      align-items: flex-end;
+      margin-left: 1rem;
 
-      .fa-utensils {
-        margin-left: 7px;
+      > h2 {
+        margin-top: 25px;
+        width: 85%;
       }
-      .fas {
-        margin-right: 0.5rem;
-        font-size: 1rem;
-      }
-      p {
-        margin: 0.5rem 0 0 0;
-        text-align: justify;
-      }
-    }
 
-    .mentions-footer {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-
-      & > a {
-        color: white;
-        text-decoration: none;
-      }
-      p {
-        margin: 0.5rem 0 0 0;
-      }
-    }
-  }
-
-  /*######################################################################*/
-  /*############################## header menu ###########################*/
-  /*######################################################################*/
-
-  .arrow {
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    color: black;
-  }
-
-  /*######################################################################*/
-  /*############################## header menu ###########################*/
-  /*######################################################################*/
-
-  .main-restaurant {
-    .img-card-menu {
-      z-index: 1;
-      display: flex;
-      justify-content: center;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 100%;
-      height: 310px;
-    }
-    .menu-card {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      background-color: $colour-grey-little;
-      border-radius: 30px 30px 0 0;
-      margin-top: -3.5rem;
-
-      .title-menu-card {
-        font-family: $Shrikand-font;
-        display: flex;
-        flex-direction: row;
+      .heart {
+        margin-bottom: 25px;
+        width: 100%;
         align-items: flex-end;
-        margin-left: 1rem;
-
-        > h2 {
-          margin-top: 25px;
-          width: 85%;
-        }
-
-        .heart {
-          margin-bottom: 25px;
-          width: 100%;
-          align-items: flex-end;
-          width: 15%;
-        }
+        width: 15%;
       }
-      .menu-card-dish {
+    }
+    .menu-card-dish {
+      display: flex;
+      flex-direction: column;
+
+      .menu-card-dish-column {
         display: flex;
         flex-direction: column;
+        padding: 0 1rem;
 
-        .menu-card-dish-column {
+        .menu-card-dish-column-title {
+          width: fit-content;
+          color: #888888;
+          margin-bottom: 0.5rem;
+          border-bottom: 3px solid #99e2d0;
+        }
+
+        .menu-card-dish-column-choice {
+          background-color: $colour-white;
           display: flex;
-          flex-direction: column;
-          padding: 0 1rem;
+          margin: 0 auto 1rem auto;
+          height: 70px;
+          border-radius: 20px;
+          width: 100%;
 
-          .menu-card-dish-column-title {
-            width: fit-content;
-            color: #888888;
-            margin-bottom: 0.5rem;
-            border-bottom: 3px solid #99e2d0;
-          }
+          justify-content: space-between;
 
-          .menu-card-dish-column-choice {
-            background-color: $colour-white;
+          .description-price {
             display: flex;
-            margin: 0 auto 1rem auto;
-            height: 70px;
-            border-radius: 20px;
             width: 100%;
-
             justify-content: space-between;
 
-            .description-price {
-              display: flex;
-              width: 100%;
-              justify-content: space-between;
-
-              .description {
-                > h3 {
-                  display: flex;
-                  margin: 0;
-                }
-
-                > p {
-                  font-size: smaller;
-                  display: flex;
-                  margin: 0;
-                }
-
-                .price {
-                  display: flex;
-                  justify-content: center;
-                  align-items: flex-end;
-                  margin-bottom: 0.5rem;
+            .description {
+              width: 60%;
+              @include ajust-h3-p;
+              padding-left: 1rem;
+              padding-bottom: 0.5rem;
+            }
+            .price {
+              width: 20%;
+              text-align: end;
+              font-weight: bold;
+              align-self: flex-end;
+              padding-bottom: 0.6rem;
+              padding-right: 3rem;
+            }
+            .validate-check {
+              display: none;
+            }
+            &:hover {
+              cursor: pointer;
+              .validate-check {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $colour-tertiary;
+                width: 70px;
+                height: 70px;
+                border-radius: 0 20px 20px 0;
+                align-self: flex-end;
+                cursor: pointer;
+                .fas {
+                  font-size: 2rem;
+                  color: $colour-white;
+                  border: 6px solid $colour-tertiary;
                 }
               }
             }

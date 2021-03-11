@@ -560,15 +560,6 @@ a {
   /*######################################################################*/
   /*###############################  Main  ###############################*/
   /*######################################################################*/
-  /*######################################################################*/
-  /*##############################  Footer  ##############################*/
-  /*######################################################################*/
-  /*######################################################################*/
-  /*############################## header menu ###########################*/
-  /*######################################################################*/
-  /*######################################################################*/
-  /*############################## header menu ###########################*/
-  /*######################################################################*/
 }
 
 .container .header-index {
@@ -848,7 +839,12 @@ a {
   top: 14px;
 }
 
-.container .index .restaurant .list-restaurant .list-restaurant-card .list-restaurant-card-name {
+.container .index .restaurant .list-restaurant .list-restaurant-card:hover .card-new {
+  -webkit-animation: full-scale 500ms 200ms forwards;
+          animation: full-scale 500ms 200ms forwards;
+}
+
+.container .index .restaurant .list-restaurant .list-restaurant-card-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -866,23 +862,26 @@ a {
   margin-top: 10px;
 }
 
-.container .index .restaurant .list-restaurant .list-restaurant-card .list-restaurant-card-name > a {
+.container .index .restaurant .list-restaurant .list-restaurant-card-name > a {
   width: 80%;
 }
 
-.container .index .restaurant .list-restaurant .list-restaurant-card .list-restaurant-card-name > a h3,
-.container .index .restaurant .list-restaurant .list-restaurant-card .list-restaurant-card-name > a p {
+.container .index .restaurant .list-restaurant .list-restaurant-card-name > a h3,
+.container .index .restaurant .list-restaurant .list-restaurant-card-name > a p {
   margin: 0%;
   margin-top: 5px;
 }
 
-.container .footer {
+/*######################################################################*/
+/*##############################  Footer  ##############################*/
+/*######################################################################*/
+.footer {
   background-color: #353535;
   color: white;
   padding: 1.5rem 0 3rem 1.5rem;
 }
 
-.container .footer .footer-title {
+.footer .footer-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -900,7 +899,7 @@ a {
   letter-spacing: 1.3px;
 }
 
-.container .footer .partner-footer {
+.footer .partner-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -912,21 +911,21 @@ a {
       justify-content: space-around;
 }
 
-.container .footer .partner-footer .fa-utensils {
+.footer .partner-footer .fa-utensils {
   margin-left: 7px;
 }
 
-.container .footer .partner-footer .fas {
+.footer .partner-footer .fas {
   margin-right: 0.5rem;
   font-size: 1rem;
 }
 
-.container .footer .partner-footer p {
+.footer .partner-footer p {
   margin: 0.5rem 0 0 0;
   text-align: justify;
 }
 
-.container .footer .mentions-footer {
+.footer .mentions-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -938,23 +937,29 @@ a {
       justify-content: space-around;
 }
 
-.container .footer .mentions-footer > a {
+.footer .mentions-footer > a {
   color: white;
   text-decoration: none;
 }
 
-.container .footer .mentions-footer p {
+.footer .mentions-footer p {
   margin: 0.5rem 0 0 0;
 }
 
-.container .arrow {
+/*######################################################################*/
+/*############################## header menu ###########################*/
+/*######################################################################*/
+.arrow {
   position: absolute;
   top: 15px;
   left: 20px;
   color: black;
 }
 
-.container .main-restaurant .img-card-menu {
+/*######################################################################*/
+/*############################## header menu ###########################*/
+/*######################################################################*/
+.main-restaurant .img-card-menu {
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -969,7 +974,7 @@ a {
   height: 310px;
 }
 
-.container .main-restaurant .menu-card {
+.main-restaurant .menu-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -983,7 +988,7 @@ a {
   margin-top: -3.5rem;
 }
 
-.container .main-restaurant .menu-card .title-menu-card {
+.main-restaurant .menu-card .title-menu-card {
   font-family: "Shrikhand", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -998,12 +1003,12 @@ a {
   margin-left: 1rem;
 }
 
-.container .main-restaurant .menu-card .title-menu-card > h2 {
+.main-restaurant .menu-card .title-menu-card > h2 {
   margin-top: 25px;
   width: 85%;
 }
 
-.container .main-restaurant .menu-card .title-menu-card .heart {
+.main-restaurant .menu-card .title-menu-card .heart {
   margin-bottom: 25px;
   width: 100%;
   -webkit-box-align: end;
@@ -1012,7 +1017,7 @@ a {
   width: 15%;
 }
 
-.container .main-restaurant .menu-card .menu-card-dish {
+.main-restaurant .menu-card .menu-card-dish {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1022,7 +1027,7 @@ a {
           flex-direction: column;
 }
 
-.container .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column {
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1033,7 +1038,7 @@ a {
   padding: 0 1rem;
 }
 
-.container .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-title {
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-title {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1042,7 +1047,7 @@ a {
   border-bottom: 3px solid #99e2d0;
 }
 
-.container .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice {
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice {
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1056,7 +1061,7 @@ a {
           justify-content: space-between;
 }
 
-.container .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price {
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1066,35 +1071,74 @@ a {
           justify-content: space-between;
 }
 
-.container .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .description > h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .description {
+  width: 60%;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
 }
 
-.container .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .description > p {
-  font-size: smaller;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .description h3,
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .description p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* tronque le texte avec ... */
 }
 
-.container .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .description .price {
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .description h3 {
+  margin: 0;
+  padding-top: 0.6rem;
+}
+
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .description p {
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .price {
+  width: 20%;
+  text-align: end;
+  font-weight: bold;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-bottom: 0.6rem;
+  padding-right: 3rem;
+}
+
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .validate-check {
+  display: none;
+}
+
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price:hover {
+  cursor: pointer;
+}
+
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price:hover .validate-check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-bottom: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99E2D0;
+  width: 70px;
+  height: 70px;
+  border-radius: 0 20px 20px 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  cursor: pointer;
 }
 
-.container #container-order {
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price:hover .validate-check .fas {
+  font-size: 2rem;
+  color: #ffffff;
+  border: 6px solid #99E2D0;
+}
+
+.main-restaurant #container-order {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1103,7 +1147,7 @@ a {
           justify-content: center;
 }
 
-.container #container-order .order-button {
+.main-restaurant #container-order .order-button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1123,11 +1167,11 @@ a {
   cursor: pointer;
 }
 
-.container #container-order .order-button:focus {
+.main-restaurant #container-order .order-button:focus {
   outline: none;
 }
 
-.container #container-order .order-button:hover {
+.main-restaurant #container-order .order-button:hover {
   opacity: 0.8;
   -webkit-box-shadow: 5px 5px 20px #bebebe;
           box-shadow: 5px 5px 20px #bebebe;

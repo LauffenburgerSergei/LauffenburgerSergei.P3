@@ -1,10 +1,27 @@
 @mixin origin-position {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 @mixin img-size {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin ajust-h3-p {
+  h3,
+  p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* tronque le texte avec ... */
+  }
+  h3 {
+    margin: 0;
+    padding-top: 0.6rem;
+  }
+  p {
+    margin: 0;
+    padding-top: 0.5rem;
+  }
 }
