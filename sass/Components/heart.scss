@@ -1,23 +1,24 @@
+@import "../utils/variables.scss";
+
 .heart {
-    margin-right: 1rem;
-    display: flex;
-    font-size: 2rem;
-    position: relative;
+  display: flex;
+  font-size: 2rem;
+  position: relative;
 
-    .fas {
-      color: #9356DC;
-      position: absolute;
-      left: 0;
-      top: 0.15rem;
-      transform: scale(0);
-      transform-origin: bottom;
-    }
-
-    &:hover > .fas {
-      animation: full-scale 500ms 100ms forwards;
-    }
-
-    &:hover > .far {
-      animation: detail 500ms 100ms forwards;
-    }
+  .fas {
+    color: $colour-primary;
+    position: absolute;
+    left: 0;
+    top: 0.15rem;
+    transform: scale(0);
+    transform-origin: bottom;
   }
+
+  &:hover > .fas {
+    animation: full-scale 500ms 100ms forwards;
+  }
+
+  &:hover > .far {
+    animation: detail 500ms 100ms forwards;
+  }
+}

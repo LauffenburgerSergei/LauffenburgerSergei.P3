@@ -21,3 +21,14 @@ $colour-dark: #353535;                   /*gris foncé pour le footer*/
 $colour-black:#000000;                   /*noir*/
 $colour-grey-little:#f5f5f5;              /*blanc cassé pour la partie avec les textes juste au dessus du bouton "explorer nos restaurants*/
 $boxShadowColor : #c5c2c2 ;
+$color-4: #F6F6F6;
+
+/* ################################################################*/
+/* ########################### loader #############################*/
+/* ################################################################*/
+
+$list-color : $colour-primary, $colour-secondary, $colour-tertiary;
+$num_color : 3;
+
+$size-ball: 15px;
+$load-delay-step: 200ms;

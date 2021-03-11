@@ -2,6 +2,7 @@
 @import "../sass/utils/variables.scss";
 @import "../sass/utils/keyframes.scss";
 @import "../sass/Components/heart.scss";
+@import "../sass/Components/loader.scss";
 
 * {
   box-sizing: border-box;
@@ -68,6 +69,8 @@ a {
 
   .index {
     margin-top: 0;
+    visibility: hidden;
+    animation: main-loading .2s 3.2s forwards;
 
     .main-intro {
       text-align: center;
@@ -289,6 +292,9 @@ a {
       flex-direction: column;
       justify-content: space-around;
 
+      .fa-utensils {
+        margin-left: 7px;
+      }
       .fas {
         margin-right: 0.5rem;
         font-size: 1rem;
@@ -320,7 +326,7 @@ a {
 
   .arrow {
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: 20px;
     color: black;
   }
@@ -398,7 +404,9 @@ a {
 
             .description-price {
               display: flex;
+              width: 100%;
               justify-content: space-between;
+              
 
               .description {
                 > h3 {
