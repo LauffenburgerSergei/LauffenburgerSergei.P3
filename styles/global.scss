@@ -70,7 +70,7 @@ a {
   .index {
     margin-top: 0;
     visibility: hidden;
-    animation: main-loading .2s 3.2s forwards;
+    animation: main-loading 0.2s 3.2s forwards;
 
     .main-intro {
       text-align: center;
@@ -387,7 +387,6 @@ a {
             color: #888888;
             margin-bottom: 0.5rem;
             border-bottom: 3px solid #99e2d0;
-            
           }
 
           .menu-card-dish-column-choice {
@@ -404,7 +403,6 @@ a {
               display: flex;
               width: 100%;
               justify-content: space-between;
-              
 
               .description {
                 > h3 {
@@ -428,6 +426,53 @@ a {
             }
           }
         }
+      }
+    }
+  }
+
+  #container-order {
+    display: flex;
+    justify-content: center;
+
+    .order-button {
+      align-self: center;
+      margin-top: 2rem;
+      font-size: 1.1rem;
+      width: 250px;
+      height: 60px;
+      margin-top: 1rem;
+      margin-bottom: 4rem;
+      color: white;
+      border: none;
+      border-radius: 60px;
+      background: #ff79da;
+      background: -moz-linear-gradient(
+        -45deg,
+        #ff79da 15%,
+        #b73bdc 65%,
+        #9356dc 100%
+      );
+      background: -webkit-linear-gradient(
+        -45deg,
+        #ff79da 15%,
+        #b73bdc 65%,
+        #9356dc 100%
+      );
+      background: linear-gradient(
+        173deg,
+        #ff79da 15%,
+        #b73bdc 65%,
+        #9356dc 100%
+      );
+      box-shadow: 2px 2px 7px #f2f2f2;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        opacity: 0.8;
+        box-shadow: 5px 5px 20px rgb(190, 190, 190);
       }
     }
   }

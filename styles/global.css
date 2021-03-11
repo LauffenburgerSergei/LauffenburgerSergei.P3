@@ -627,8 +627,8 @@ a {
 .container .index {
   margin-top: 0;
   visibility: hidden;
-  -webkit-animation: main-loading .2s 3.2s forwards;
-          animation: main-loading .2s 3.2s forwards;
+  -webkit-animation: main-loading 0.2s 3.2s forwards;
+          animation: main-loading 0.2s 3.2s forwards;
 }
 
 .container .index .main-intro {
@@ -1092,5 +1092,44 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
   margin-bottom: 0.5rem;
+}
+
+.container #container-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container #container-order .order-button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  width: 250px;
+  height: 60px;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  color: white;
+  border: none;
+  border-radius: 60px;
+  background: #ff79da;
+  background: linear-gradient(173deg, #ff79da 15%, #b73bdc 65%, #9356dc 100%);
+  -webkit-box-shadow: 2px 2px 7px #f2f2f2;
+          box-shadow: 2px 2px 7px #f2f2f2;
+  cursor: pointer;
+}
+
+.container #container-order .order-button:focus {
+  outline: none;
+}
+
+.container #container-order .order-button:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 5px 5px 20px #bebebe;
+          box-shadow: 5px 5px 20px #bebebe;
 }
 /*# sourceMappingURL=global.css.map */
