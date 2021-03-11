@@ -1039,10 +1039,6 @@ a {
   width: fit-content;
   color: #888888;
   margin-bottom: 0.5rem;
-}
-
-.container .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-title:hover {
-  cursor: pointer;
   border-bottom: 3px solid #99e2d0;
 }
 
