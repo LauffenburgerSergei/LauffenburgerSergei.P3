@@ -22,7 +22,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2rem;
+  font-size: 1.4rem;
   position: relative;
 }
 
@@ -43,6 +43,7 @@
 }
 
 .heart:hover > .far {
+  cursor: pointer;
   -webkit-animation: detail 500ms 100ms forwards;
           animation: detail 500ms 100ms forwards;
 }

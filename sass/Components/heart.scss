@@ -2,7 +2,7 @@
 
 .heart {
   display: flex;
-  font-size: 2rem;
+  font-size: 1.4rem;
   position: relative;
 
   .fas {
@@ -19,6 +19,7 @@
   }
 
   &:hover > .far {
+    cursor: pointer;
     animation: detail 500ms 100ms forwards;
   }
 }

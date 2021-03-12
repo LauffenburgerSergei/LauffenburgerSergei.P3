@@ -18,7 +18,9 @@
 /* ################################################################*/
 /* ########################### loader #############################*/
 /* ################################################################*/
-/*heart*/
+/*######################################################################*/
+/*################################# heart  #############################*/
+/*######################################################################*/
 @-webkit-keyframes full-scale {
   from {
     -webkit-transform: scale(0);
@@ -57,7 +59,8 @@
 }
 
 @-webkit-keyframes detail {
-  from, 95% {
+  from,
+  95% {
     opacity: 1;
   }
   100% {
@@ -66,7 +69,8 @@
 }
 
 @keyframes detail {
-  from, 95% {
+  from,
+  95% {
     opacity: 1;
   }
   100% {
@@ -74,7 +78,9 @@
   }
 }
 
-/*loading*/
+/*######################################################################*/
+/*################################ loading  ############################*/
+/*######################################################################*/
 @-webkit-keyframes anim-ball {
   from {
     top: 100%;
@@ -129,7 +135,7 @@
   20% {
     -webkit-transform: scale(0.5, 0.5);
             transform: scale(0.5, 0.5);
-    opacity: .8;
+    opacity: 0.8;
   }
   to {
     -webkit-transform: scale(0, 0);
@@ -147,7 +153,7 @@
   20% {
     -webkit-transform: scale(0.5, 0.5);
             transform: scale(0.5, 0.5);
-    opacity: .8;
+    opacity: 0.8;
   }
   to {
     -webkit-transform: scale(0, 0);
@@ -216,6 +222,48 @@
   }
 }
 
+/*######################################################################*/
+/*################################# check  #############################*/
+/*######################################################################*/
+@-webkit-keyframes slideX {
+  to {
+    width: 0%;
+  }
+  from {
+    width: 30%;
+  }
+}
+@keyframes slideX {
+  to {
+    width: 0%;
+  }
+  from {
+    width: 30%;
+  }
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
 /* ################################################################*/
 /* ############################ Police ############################*/
 /* ################################################################*/
@@ -239,7 +287,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2rem;
+  font-size: 1.4rem;
   position: relative;
 }
 
@@ -260,6 +308,7 @@
 }
 
 .heart:hover > .far {
+  cursor: pointer;
   -webkit-animation: detail 500ms 100ms forwards;
           animation: detail 500ms 100ms forwards;
 }
@@ -283,7 +332,9 @@
 /* ################################################################*/
 /* ########################### loader #############################*/
 /* ################################################################*/
-/*heart*/
+/*######################################################################*/
+/*################################# heart  #############################*/
+/*######################################################################*/
 @keyframes full-scale {
   from {
     -webkit-transform: scale(0);
@@ -304,7 +355,8 @@
 }
 
 @keyframes detail {
-  from, 95% {
+  from,
+  95% {
     opacity: 1;
   }
   100% {
@@ -312,7 +364,9 @@
   }
 }
 
-/*loading*/
+/*######################################################################*/
+/*################################ loading  ############################*/
+/*######################################################################*/
 @keyframes anim-ball {
   from {
     top: 100%;
@@ -345,7 +399,7 @@
   20% {
     -webkit-transform: scale(0.5, 0.5);
             transform: scale(0.5, 0.5);
-    opacity: .8;
+    opacity: 0.8;
   }
   to {
     -webkit-transform: scale(0, 0);
@@ -381,6 +435,29 @@
   }
   to {
     visibility: visible;
+  }
+}
+
+/*######################################################################*/
+/*################################# check  #############################*/
+/*######################################################################*/
+@keyframes slideX {
+  to {
+    width: 0%;
+  }
+  from {
+    width: 30%;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 
@@ -575,8 +652,10 @@ a {
 }
 
 .container .header-index .header-logo {
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-family: "Shrikhand", sans-serif;
+  height: 55px;
+  padding-top: 5px;
 }
 
 .container .header-index .location {
@@ -592,7 +671,7 @@ a {
   -ms-flex-item-align: center;
       align-self: center;
   width: 100%;
-  height: 50px;
+  height: 45px;
   background-color: #f3f3f3;
   -webkit-box-shadow: inset 1px 2px 7px #c5c2c2;
           box-shadow: inset 1px 2px 7px #c5c2c2;
@@ -601,7 +680,7 @@ a {
 .container .header-index .location .header-input {
   border: none;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 0.9rem;
   color: #000000;
   background-color: transparent;
 }
@@ -611,7 +690,7 @@ a {
       -ms-grid-row-align: center;
       align-self: center;
   margin-left: 70px;
-  margin-right: 15px;
+  margin-right: 8px;
   color: #000000;
 }
 
@@ -634,12 +713,13 @@ a {
 
 .container .index .main-intro .intro > h2 {
   margin: 2rem 2rem 0 2rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-top: 1rem;
 }
 
 .container .index .main-intro .intro > h3 {
   margin: 0 1.3rem 1rem 1.3rem;
+  font-size: 1.2rem;
   font-weight: 300;
 }
 
@@ -685,6 +765,7 @@ a {
 
 .container .index .operation .operation-title {
   margin-left: 1rem;
+  font-size: 0.9rem;
 }
 
 .container .index .operation .operation-list {
@@ -750,7 +831,7 @@ a {
 
 .container .index .operation .operation-list .operation-item-list .testh3 {
   width: 90%;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   margin: 0;
 }
 
@@ -773,6 +854,7 @@ a {
 
 .container .index .restaurant .restaurant-name {
   padding: 2rem 0 0 1rem;
+  font-size: 0.9rem;
 }
 
 .container .index .restaurant .list-restaurant {
@@ -870,6 +952,11 @@ a {
 .container .index .restaurant .list-restaurant .list-restaurant-card-name > a p {
   margin: 0%;
   margin-top: 5px;
+  font-size: 1.1rem;
+}
+
+.container .index .restaurant .list-restaurant .list-restaurant-card-name > a p {
+  font-weight: 300;
 }
 
 /*######################################################################*/
@@ -893,7 +980,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "Shrikhand", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
   height: 35px;
   margin-right: 10px;
   letter-spacing: 1.3px;
@@ -923,6 +1010,7 @@ a {
 .footer .partner-footer p {
   margin: 0.5rem 0 0 0;
   text-align: justify;
+  font-size: 0.9rem;
 }
 
 .footer .mentions-footer {
@@ -944,6 +1032,7 @@ a {
 
 .footer .mentions-footer p {
   margin: 0.5rem 0 0 0;
+  font-size: 0.9rem;
 }
 
 /*######################################################################*/
@@ -952,7 +1041,7 @@ a {
 .arrow {
   position: absolute;
   top: 15px;
-  left: 20px;
+  left: 10px;
   color: black;
 }
 
@@ -1006,6 +1095,7 @@ a {
 .main-restaurant .menu-card .title-menu-card > h2 {
   margin-top: 25px;
   width: 85%;
+  font-size: 1.3rem;
 }
 
 .main-restaurant .menu-card .title-menu-card .heart {
@@ -1045,6 +1135,7 @@ a {
   color: #888888;
   margin-bottom: 0.5rem;
   border-bottom: 3px solid #99e2d0;
+  font-size: 0.9rem;
 }
 
 .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice {
@@ -1072,7 +1163,7 @@ a {
 }
 
 .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .description {
-  width: 60%;
+  width: 80%;
   padding-left: 1rem;
   padding-bottom: 0.5rem;
 }
@@ -1087,22 +1178,25 @@ a {
 
 .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .description h3 {
   margin: 0;
-  padding-top: 0.6rem;
+  padding-top: 14px;
+  font-size: 0.9rem;
 }
 
 .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .description p {
   margin: 0;
-  padding-top: 0.5rem;
+  padding-top: 8px;
+  font-size: 0.75rem;
 }
 
 .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .price {
   width: 20%;
   text-align: end;
-  font-weight: bold;
+  font-weight: 500;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding-bottom: 0.6rem;
-  padding-right: 3rem;
+  padding-bottom: 16px;
+  padding-right: 15px;
+  font-size: 0.9rem;
 }
 
 .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .validate-check {
@@ -1123,19 +1217,25 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #99E2D0;
   width: 70px;
   height: 70px;
+  background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
   -ms-flex-item-align: end;
       align-self: flex-end;
   cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: slideX 0.4s forwards;
+          animation: slideX 0.4s forwards;
+  animation-direction: reverse;
 }
 
 .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price:hover .validate-check .fas {
   font-size: 2rem;
   color: #ffffff;
   border: 6px solid #99E2D0;
+  -webkit-animation: rotate 350ms linear;
 }
 
 .main-restaurant #container-order {
@@ -1153,8 +1253,8 @@ a {
       align-self: center;
   margin-top: 2rem;
   font-size: 1.1rem;
-  width: 250px;
-  height: 60px;
+  width: 220px;
+  height: 50px;
   margin-top: 1rem;
   margin-bottom: 4rem;
   color: white;

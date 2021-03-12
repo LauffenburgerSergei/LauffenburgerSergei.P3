@@ -33,8 +33,10 @@ a {
     position: relative;
 
     .header-logo {
-      font-size: 2rem;
+      font-size: 1.9rem;
       font-family: $Shrikand-font;
+      height: 55px;
+      padding-top: 5px;
     }
     .location {
       display: flex;
@@ -42,14 +44,14 @@ a {
       align-items: center;
       align-self: center;
       width: 100%;
-      height: 50px;
+      height: 45px;
       background-color: $colour-grey-middle;
       box-shadow: inset 1px 2px 7px $boxShadowColor;
 
       .header-input {
         border: none;
         font-weight: bold;
-        font-size: 1em;
+        font-size: 0.9rem;
         color: $colour-black;
         background-color: transparent;
       }
@@ -57,7 +59,7 @@ a {
       .icon-location {
         align-self: center;
         margin-left: 70px;
-        margin-right: 15px;
+        margin-right: 8px;
         color: $colour-black;
       }
     }
@@ -83,11 +85,12 @@ a {
 
       .intro > h2 {
         margin: 2rem 2rem 0 2rem;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         margin-top: 1rem;
       }
       .intro > h3 {
         margin: 0 1.3rem 1rem 1.3rem;
+        font-size: 1.2rem;
         font-weight: 300;
       }
       .presentation {
@@ -140,6 +143,7 @@ a {
 
       .operation-title {
         margin-left: 1rem;
+        font-size: 0.9rem;
       }
       .operation-list {
         z-index: 1;
@@ -184,7 +188,7 @@ a {
           }
           .testh3 {
             width: 90%;
-            font-size: 1.1rem;
+            font-size: 0.8rem;
             margin: 0;
           }
           .testI {
@@ -204,6 +208,7 @@ a {
 
       .restaurant-name {
         padding: 2rem 0 0 1rem;
+        font-size: 0.9rem;
       }
 
       .list-restaurant {
@@ -265,6 +270,10 @@ a {
             p {
               margin: 0%;
               margin-top: 5px;
+              font-size: 1.1rem;
+            }
+            p {
+              font-weight: 300;
             }
           }
         }
@@ -287,7 +296,7 @@ a {
     flex-direction: column;
     justify-content: center;
     font-family: $Shrikand-font;
-    font-size: 1.25rem;
+    font-size: 1rem;
     height: 35px;
     margin-right: 10px;
     letter-spacing: 1.3px;
@@ -308,6 +317,7 @@ a {
     p {
       margin: 0.5rem 0 0 0;
       text-align: justify;
+      font-size: 0.9rem;
     }
   }
 
@@ -322,6 +332,7 @@ a {
     }
     p {
       margin: 0.5rem 0 0 0;
+      font-size: 0.9rem;
     }
   }
 }
@@ -333,7 +344,7 @@ a {
 .arrow {
   position: absolute;
   top: 15px;
-  left: 20px;
+  left: 10px;
   color: black;
 }
 
@@ -370,6 +381,7 @@ a {
       > h2 {
         margin-top: 25px;
         width: 85%;
+        font-size: 1.3rem;
       }
 
       .heart {
@@ -393,6 +405,7 @@ a {
           color: #888888;
           margin-bottom: 0.5rem;
           border-bottom: 3px solid #99e2d0;
+          font-size: 0.9rem;
         }
 
         .menu-card-dish-column-choice {
@@ -411,7 +424,7 @@ a {
             justify-content: space-between;
 
             .description {
-              width: 60%;
+              width: 80%;
               @include ajust-h3-p;
               padding-left: 1rem;
               padding-bottom: 0.5rem;
@@ -419,10 +432,11 @@ a {
             .price {
               width: 20%;
               text-align: end;
-              font-weight: bold;
+              font-weight: 500;
               align-self: flex-end;
-              padding-bottom: 0.6rem;
-              padding-right: 3rem;
+              padding-bottom: 16px;
+              padding-right: 15px;
+              font-size: 0.9rem;
             }
             .validate-check {
               display: none;
@@ -433,16 +447,20 @@ a {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: $colour-tertiary;
                 width: 70px;
                 height: 70px;
+                background-color: $colour-tertiary;
                 border-radius: 0 20px 20px 0;
                 align-self: flex-end;
                 cursor: pointer;
+                transform: scale(1);
+                animation: slideX 0.4s forwards;
+                animation-direction: reverse;
                 .fas {
                   font-size: 2rem;
                   color: $colour-white;
                   border: 6px solid $colour-tertiary;
+                  -webkit-animation: rotate 350ms linear;
                 }
               }
             }
@@ -460,8 +478,8 @@ a {
       align-self: center;
       margin-top: 2rem;
       font-size: 1.1rem;
-      width: 250px;
-      height: 60px;
+      width: 220px;
+      height: 50px;
       margin-top: 1rem;
       margin-bottom: 4rem;
       color: white;
