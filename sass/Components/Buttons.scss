@@ -1,0 +1,84 @@
+@import "../utils/keyframes.scss";
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+/*########################### page index ###########################*/
+
+.button-explore {
+  font-size: 1.1rem;
+  width: 250px;
+  height: 60px;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  color: white;
+  border: none;
+  border-radius: 60px;
+  background: #ff79da;
+  background: -moz-linear-gradient(
+    -45deg,
+    #ff79da 15%,
+    #b73bdc 65%,
+    #9356dc 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    #ff79da 15%,
+    #b73bdc 65%,
+    #9356dc 100%
+  );
+  background: linear-gradient(173deg, #ff79da 15%, #b73bdc 65%, #9356dc 100%);
+  box-shadow: 2px 2px 7px #f2f2f2;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 5px 5px 20px #bebebe;
+  }
+}
+
+/*########################### pages Menu ###########################*/
+
+.order-button {
+    align-self: center;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    width: 220px;
+    height: 50px;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    color: white;
+    border: none;
+    border-radius: 60px;
+    background: #ff79da;
+    background: -moz-linear-gradient(
+      -45deg,
+      #ff79da 15%,
+      #b73bdc 65%,
+      #9356dc 100%
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      #ff79da 15%,
+      #b73bdc 65%,
+      #9356dc 100%
+    );
+    background: linear-gradient(
+      173deg,
+      #ff79da 15%,
+      #b73bdc 65%,
+      #9356dc 100%
+    );
+    box-shadow: 2px 2px 7px #f2f2f2;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      opacity: 0.8;
+      box-shadow: 5px 5px 20px rgb(190, 190, 190);
+    }
+  }

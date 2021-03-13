@@ -608,6 +608,212 @@
           animation-delay: 600ms;
 }
 
+/*######################################################################*/
+/*################################# heart  #############################*/
+/*######################################################################*/
+@keyframes full-scale {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  95% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes detail {
+  from,
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*######################################################################*/
+/*################################ loading  ############################*/
+/*######################################################################*/
+@keyframes anim-ball {
+  from {
+    top: 100%;
+    height: 5px;
+    border-radius: 40px 40px 10px 10px;
+    -webkit-transform: scaleX(1.7);
+            transform: scaleX(1.7);
+  }
+  20% {
+    height: 20px;
+    border-radius: 50%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  to {
+    top: 0;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes anim-shadow {
+  from {
+    -webkit-transform: scale(0.8, 0.5);
+            transform: scale(0.8, 0.5);
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5);
+    opacity: 0.8;
+  }
+  to {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes anim-text {
+  from {
+    -webkit-transform: rotateX(1turn);
+            transform: rotateX(1turn);
+  }
+  60% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
+@keyframes stop-loading {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+
+@keyframes main-loading {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
+/*######################################################################*/
+/*################################# check  #############################*/
+/*######################################################################*/
+@keyframes slideX {
+  to {
+    width: 0%;
+  }
+  from {
+    width: 30%;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+/* ################################################################*/
+/* ############################ Police ############################*/
+/* ################################################################*/
+/* ################################################################*/
+/* ########################### Couleurs ###########################*/
+/* ################################################################*/
+/*violet pour les boutons*/
+/*rose pour les boutons*/
+/*rose clair pour fonctionnement*/
+/*vert pour le fond des étiquettes nouveau*/
+/*vert foncé pour le texte des étiquettes nouveau*/
+/*blanc*/
+/*gris clair pour la recherche de ville*/
+/*gris foncé pour le footer*/
+/*noir*/
+/*blanc cassé pour la partie avec les textes juste au dessus du bouton "explorer nos restaurants*/
+/* ################################################################*/
+/* ########################### loader #############################*/
+/* ################################################################*/
+/*########################### page index ###########################*/
+.button-explore {
+  font-size: 1.1rem;
+  width: 250px;
+  height: 60px;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  color: white;
+  border: none;
+  border-radius: 60px;
+  background: #ff79da;
+  background: linear-gradient(173deg, #ff79da 15%, #b73bdc 65%, #9356dc 100%);
+  -webkit-box-shadow: 2px 2px 7px #f2f2f2;
+          box-shadow: 2px 2px 7px #f2f2f2;
+  cursor: pointer;
+}
+
+.button-explore:focus {
+  outline: none;
+}
+
+.button-explore:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 5px 5px 20px #bebebe;
+          box-shadow: 5px 5px 20px #bebebe;
+}
+
+/*########################### pages Menu ###########################*/
+.order-button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  width: 220px;
+  height: 50px;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  color: white;
+  border: none;
+  border-radius: 60px;
+  background: #ff79da;
+  background: linear-gradient(173deg, #ff79da 15%, #b73bdc 65%, #9356dc 100%);
+  -webkit-box-shadow: 2px 2px 7px #f2f2f2;
+          box-shadow: 2px 2px 7px #f2f2f2;
+  cursor: pointer;
+}
+
+.order-button:focus {
+  outline: none;
+}
+
+.order-button:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 5px 5px 20px #bebebe;
+          box-shadow: 5px 5px 20px #bebebe;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -727,32 +933,6 @@ a {
   display: none;
 }
 
-.container .index .main-intro .button-explore {
-  font-size: 1.1rem;
-  width: 250px;
-  height: 60px;
-  margin-top: 1rem;
-  margin-bottom: 4rem;
-  color: white;
-  border: none;
-  border-radius: 60px;
-  background: #ff79da;
-  background: linear-gradient(173deg, #ff79da 15%, #b73bdc 65%, #9356dc 100%);
-  -webkit-box-shadow: 2px 2px 7px #f2f2f2;
-          box-shadow: 2px 2px 7px #f2f2f2;
-  cursor: pointer;
-}
-
-.container .index .main-intro .button-explore:focus {
-  outline: none;
-}
-
-.container .index .main-intro .button-explore:hover {
-  opacity: 0.8;
-  -webkit-box-shadow: 5px 5px 20px #bebebe;
-          box-shadow: 5px 5px 20px #bebebe;
-}
-
 .container .index .operation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -810,7 +990,7 @@ a {
 }
 
 .container .index .operation .operation-list .operation-item-list:hover {
-  background-color: #fff0ff;
+  background-color: #FFF0FF;
 }
 
 .container .index .operation .operation-list .operation-item-list:hover i {
@@ -1046,7 +1226,7 @@ a {
 }
 
 /*######################################################################*/
-/*############################## header menu ###########################*/
+/*############################### Main menu ############################*/
 /*######################################################################*/
 .main-restaurant .img-card-menu {
   z-index: 1;
@@ -1236,6 +1416,7 @@ a {
   color: #ffffff;
   border: 6px solid #99E2D0;
   -webkit-animation: rotate 350ms linear;
+  border-radius: 50%;
 }
 
 .main-restaurant #container-order {
@@ -1247,33 +1428,18 @@ a {
           justify-content: center;
 }
 
-.main-restaurant #container-order .order-button {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-top: 2rem;
+.legal-notice h1,
+.legal-notice p {
+  margin: 2rem;
+}
+
+.legal-notice h1 {
   font-size: 1.1rem;
-  width: 220px;
-  height: 50px;
-  margin-top: 1rem;
-  margin-bottom: 4rem;
-  color: white;
-  border: none;
-  border-radius: 60px;
-  background: #ff79da;
-  background: linear-gradient(173deg, #ff79da 15%, #b73bdc 65%, #9356dc 100%);
-  -webkit-box-shadow: 2px 2px 7px #f2f2f2;
-          box-shadow: 2px 2px 7px #f2f2f2;
-  cursor: pointer;
 }
 
-.main-restaurant #container-order .order-button:focus {
-  outline: none;
-}
-
-.main-restaurant #container-order .order-button:hover {
-  opacity: 0.8;
-  -webkit-box-shadow: 5px 5px 20px #bebebe;
-          box-shadow: 5px 5px 20px #bebebe;
+.legal-notice p {
+  font-size: 0.9rem;
+  padding-left: 1rem;
+  text-align: justify;
 }
 /*# sourceMappingURL=global.css.map */

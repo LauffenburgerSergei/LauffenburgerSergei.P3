@@ -3,6 +3,7 @@
 @import "../sass/utils/keyframes.scss";
 @import "../sass/Components/heart.scss";
 @import "../sass/Components/loader.scss";
+@import "../sass/Components/Buttons.scss";
 
 * {
   box-sizing: border-box;
@@ -96,45 +97,6 @@ a {
       .presentation {
         display: none;
       }
-      .button-explore {
-        font-size: 1.1rem;
-        width: 250px;
-        height: 60px;
-        margin-top: 1rem;
-        margin-bottom: 4rem;
-        color: white;
-        border: none;
-        border-radius: 60px;
-        background: #ff79da;
-        background: -moz-linear-gradient(
-          -45deg,
-          #ff79da 15%,
-          #b73bdc 65%,
-          #9356dc 100%
-        );
-        background: -webkit-linear-gradient(
-          -45deg,
-          #ff79da 15%,
-          #b73bdc 65%,
-          #9356dc 100%
-        );
-        background: linear-gradient(
-          173deg,
-          #ff79da 15%,
-          #b73bdc 65%,
-          #9356dc 100%
-        );
-        box-shadow: 2px 2px 7px #f2f2f2;
-        cursor: pointer;
-
-        &:focus {
-          outline: none;
-        }
-        &:hover {
-          opacity: 0.8;
-          box-shadow: 5px 5px 20px rgb(190, 190, 190);
-        }
-      }
     }
 
     .operation {
@@ -169,7 +131,7 @@ a {
           cursor: pointer;
 
           &:hover {
-            background-color: #fff0ff;
+            background-color: $colour-secondary-light;
 
             i {
               color: #9356dc;
@@ -349,7 +311,7 @@ a {
 }
 
 /*######################################################################*/
-/*############################## header menu ###########################*/
+/*############################### Main menu ############################*/
 /*######################################################################*/
 
 .main-restaurant {
@@ -461,6 +423,7 @@ a {
                   color: $colour-white;
                   border: 6px solid $colour-tertiary;
                   -webkit-animation: rotate 350ms linear;
+                  border-radius: 50%;
                 }
               }
             }
@@ -474,46 +437,21 @@ a {
     display: flex;
     justify-content: center;
 
-    .order-button {
-      align-self: center;
-      margin-top: 2rem;
-      font-size: 1.1rem;
-      width: 220px;
-      height: 50px;
-      margin-top: 1rem;
-      margin-bottom: 4rem;
-      color: white;
-      border: none;
-      border-radius: 60px;
-      background: #ff79da;
-      background: -moz-linear-gradient(
-        -45deg,
-        #ff79da 15%,
-        #b73bdc 65%,
-        #9356dc 100%
-      );
-      background: -webkit-linear-gradient(
-        -45deg,
-        #ff79da 15%,
-        #b73bdc 65%,
-        #9356dc 100%
-      );
-      background: linear-gradient(
-        173deg,
-        #ff79da 15%,
-        #b73bdc 65%,
-        #9356dc 100%
-      );
-      box-shadow: 2px 2px 7px #f2f2f2;
-      cursor: pointer;
+    
+  }
+}
+.legal-notice {
+  h1,
+  p {
+    margin: 2rem;
+  }
 
-      &:focus {
-        outline: none;
-      }
-      &:hover {
-        opacity: 0.8;
-        box-shadow: 5px 5px 20px rgb(190, 190, 190);
-      }
-    }
+  h1 {
+    font-size: 1.1rem;
+  }
+  p {
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    text-align: justify;
   }
 }
