@@ -226,19 +226,19 @@
 /*################################# check  #############################*/
 /*######################################################################*/
 @-webkit-keyframes slideX {
-  to {
-    width: 0%;
-  }
   from {
-    width: 30%;
+    margin-right: -100px;
+  }
+  to {
+    margin-right: 0;
   }
 }
 @keyframes slideX {
-  to {
-    width: 0%;
-  }
   from {
-    width: 30%;
+    margin-right: -100px;
+  }
+  to {
+    margin-right: 0;
   }
 }
 
@@ -442,11 +442,11 @@
 /*################################# check  #############################*/
 /*######################################################################*/
 @keyframes slideX {
-  to {
-    width: 0%;
-  }
   from {
-    width: 30%;
+    margin-right: -100px;
+  }
+  to {
+    margin-right: 0;
   }
 }
 
@@ -718,11 +718,11 @@
 /*################################# check  #############################*/
 /*######################################################################*/
 @keyframes slideX {
-  to {
-    width: 0%;
-  }
   from {
-    width: 30%;
+    margin-right: -100px;
+  }
+  to {
+    margin-right: 0;
   }
 }
 
@@ -756,7 +756,9 @@
 /* ################################################################*/
 /* ########################### loader #############################*/
 /* ################################################################*/
+/*##################################################################*/
 /*########################### page index ###########################*/
+/*##################################################################*/
 .button-explore {
   font-size: 1.1rem;
   width: 250px;
@@ -783,7 +785,9 @@
           box-shadow: 5px 5px 20px #bebebe;
 }
 
+/*##################################################################*/
 /*########################### pages Menu ###########################*/
+/*##################################################################*/
 .order-button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -1380,14 +1384,7 @@ a {
 }
 
 .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .validate-check {
-  display: none;
-}
-
-.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price:hover {
-  cursor: pointer;
-}
-
-.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price:hover .validate-check {
+  /*display: none;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1404,19 +1401,34 @@ a {
   -ms-flex-item-align: end;
       align-self: flex-end;
   cursor: pointer;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-animation: slideX 0.4s forwards;
-          animation: slideX 0.4s forwards;
-  animation-direction: reverse;
+  margin-right: -80px;
+  -webkit-transition: margin-right 0.4s, opacity 0.4s ease-in-out;
+  transition: margin-right 0.4s, opacity 0.4s ease-in-out;
+  opacity: 0;
 }
 
-.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price:hover .validate-check .fas {
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .validate-check .fas {
   font-size: 2rem;
   color: #ffffff;
   border: 6px solid #99E2D0;
-  -webkit-animation: rotate 350ms linear;
   border-radius: 50%;
+}
+
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price:hover {
+  cursor: pointer;
+}
+
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price:hover .description {
+  width: 60%;
+}
+
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price:hover .validate-check {
+  opacity: 100;
+  margin-right: 0;
+}
+
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price:hover .validate-check .fas {
+  -webkit-animation: rotate 350ms linear;
 }
 
 .main-restaurant #container-order {
