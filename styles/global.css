@@ -1251,6 +1251,7 @@ a {
   height: 70px;
   border-radius: 20px;
   width: 100%;
+  overflow: hidden;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1294,12 +1295,12 @@ a {
 
 .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price .price {
   width: 20%;
-  text-align: end;
+  text-align: right;
   font-weight: 500;
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding-bottom: 16px;
-  padding-right: 15px;
+  padding-right: 10px;
   font-size: 0.9rem;
 }
 

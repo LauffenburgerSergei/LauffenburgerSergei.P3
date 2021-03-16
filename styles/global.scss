@@ -357,7 +357,7 @@ a {
           height: 70px;
           border-radius: 20px;
           width: 100%;
-
+          overflow: hidden;
           justify-content: space-between;
 
           .description-price {
@@ -373,11 +373,11 @@ a {
             }
             .price {
               width: 20%;
-              text-align: end;
+              text-align: right;
               font-weight: 500;
               align-self: flex-end;
               padding-bottom: 16px;
-              padding-right: 15px;
+              padding-right: 10px;
               font-size: 0.9rem;
             }
             .validate-check {
