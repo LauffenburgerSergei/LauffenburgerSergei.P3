@@ -7,27 +7,25 @@
   /*######################################################################*/
   /*##############################  Header  ##############################*/
   /*######################################################################*/
-
   .location {
     border-radius: 1rem 1rem 0 0;
   }
-
   /*######################################################################*/
   /*###############################  Main  ###############################*/
   /*######################################################################*/
-
   .main-intro {
     border-radius: 0 0 1rem 1rem;
   }
-
   .operation-list {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding-bottom: 2rem;
-
-    .operation-item-list {
-      width: 25%;
-      margin: 2rem;
-    }
+  }
+  .operation-list .operation-item-list {
+    width: 25%;
+    margin: 2rem;
   }
   .restaurant {
     border-radius: 1rem;
@@ -35,3 +33,4 @@
     margin-bottom: 2rem;
   }
 }
+/*# sourceMappingURL=large.css.map */

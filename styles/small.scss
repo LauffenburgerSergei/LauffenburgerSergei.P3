@@ -5,41 +5,35 @@
 @import "../sass/Components/loader.scss";
 @import "../sass/Components/Buttons.scss";
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 10px) {
+  .header-index {
+    flex-direction: column;
+    align-items: center;
+  }
+
   /*######################################################################*/
   /*###############################  Main  ###############################*/
   /*######################################################################*/
 
   .presentation {
-    width: 100%;
-    display: block;
-
-    h2 {
-      font-size: 1.4rem;
-      margin-top: 1rem;
-    }
-
-    p {
-      text-align: justify;
-      font-size: 0.9rem;
-      padding: 2rem;
-    }
+    display: none;
   }
 
+  .operation-list {
+    flex-direction: column;
+  }
   .operation-item-list {
-    width: 65%;
+    width: 90%;
   }
 
   .list-restaurant {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0 0.5rem;
-
-    .list-restaurant-card {
-      width: calc(50% - 1rem);
-    }
+    flex-direction: column;
+    align-items: center;
+  }
+  .list-restaurant-card {
+    width: 90%;
+    height: 230px;
   }
 
   /*######################################################################*/
@@ -47,18 +41,16 @@
   /*######################################################################*/
 
   .footer-title {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .partner-footer {
-    flex-direction: row;
-    padding-top: 1.2rem;
+    flex-direction: column;
   }
 
   .mentions-footer {
-    flex-direction: row;
-    padding-top: 1.2rem;
+    flex-direction: column;
   }
-
-
 }

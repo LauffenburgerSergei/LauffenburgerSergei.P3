@@ -30,7 +30,6 @@ a {
   .header-index {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     position: relative;
 
     .header-logo {
@@ -48,196 +47,180 @@ a {
       height: 45px;
       background-color: $colour-grey-middle;
       box-shadow: inset 1px 2px 7px $boxShadowColor;
+    }
+    .header-input {
+      border: none;
+      font-weight: bold;
+      font-size: 0.9rem;
+      color: $colour-black;
+      background-color: transparent;
+    }
 
-      .header-input {
-        border: none;
-        font-weight: bold;
-        font-size: 0.9rem;
-        color: $colour-black;
-        background-color: transparent;
-      }
+    .icon-location {
+      align-self: center;
+      margin-left: 70px;
+      margin-right: 8px;
+      color: $colour-black;
+    }
+  }
+}
 
-      .icon-location {
-        align-self: center;
-        margin-left: 70px;
-        margin-right: 8px;
-        color: $colour-black;
+/*######################################################################*/
+/*###############################  Main  ###############################*/
+/*######################################################################*/
+
+.index {
+  margin-top: 0;
+  visibility: hidden;
+  animation: main-loading 0.2s 3.2s forwards;
+
+  .main-intro {
+    text-align: center;
+    background-color: $colour-grey-little;
+
+    .intro {
+      padding-top: 2.5rem;
+    }
+
+    .intro > h2 {
+      margin: 2rem 2rem 0 2rem;
+      font-size: 1.4rem;
+      margin-top: 1rem;
+    }
+    .intro > h3 {
+      margin: 0 1.3rem 1rem 1.3rem;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+  }
+
+  .operation {
+    display: flex;
+    flex-direction: column;
+
+    .operation-title {
+      margin-left: 1rem;
+      font-size: 0.9rem;
+    }
+    .operation-list {
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .operation-item-list {
+        margin-bottom: 1rem;
+        position: relative;
+        padding: 2px;
+        border: 1px #f2f2f2 solid;
+        border-radius: 25px;
+        box-shadow: 3px 3px 10px $boxShadowColor;
+        height: 70px;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $colour-secondary-light;
+
+          i {
+            color: #9356dc;
+          }
+        }
+        .operation-item-list-number {
+          font-size: smaller;
+          position: absolute;
+          left: -10px;
+          width: 20px;
+          height: 20px;
+          background-color: #9356dc;
+          color: white;
+          border-radius: 100%;
+          text-align: center;
+        }
+        .testh3 {
+          width: 90%;
+          font-size: 0.8rem;
+          margin: 0;
+        }
+        .testI {
+          width: 10%;
+          margin-left: 1.5rem;
+          display: flex;
+          justify-content: center;
+          padding-right: 1rem;
+          color: grey;
+        }
       }
     }
   }
 
-  /*######################################################################*/
-  /*###############################  Main  ###############################*/
-  /*######################################################################*/
+  .restaurant {
+    background-color: $colour-grey-little;
 
-  .index {
-    margin-top: 0;
-    visibility: hidden;
-    animation: main-loading 0.2s 3.2s forwards;
-
-    .main-intro {
-      text-align: center;
-      background-color: $colour-grey-little;
-      margin-top: -16px;
-
-      .intro {
-        padding-top: 2.5rem;
-      }
-
-      .intro > h2 {
-        margin: 2rem 2rem 0 2rem;
-        font-size: 1.4rem;
-        margin-top: 1rem;
-      }
-      .intro > h3 {
-        margin: 0 1.3rem 1rem 1.3rem;
-        font-size: 1.2rem;
-        font-weight: 300;
-      }
-      .presentation {
-        display: none;
-      }
+    .restaurant-name {
+      padding: 2rem 0 0 1rem;
+      font-size: 0.9rem;
     }
 
-    .operation {
-      display: flex;
-      flex-direction: column;
+    .list-restaurant-card {
+      position: relative;
+      box-shadow: 2px 2px 10px $boxShadowColor;
+      border-radius: 1rem 1rem 1rem 1rem;
+      justify-content: center;
+      background-color: white;
+      margin: 0 0.5rem 2rem 0.5rem;
 
-      .operation-title {
-        margin-left: 1rem;
-        font-size: 0.9rem;
-      }
-      .operation-list {
-        z-index: 1;
+      .list-restaurant-card-img {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include img-size;
+        border-radius: 1rem 1rem 0 0;
         width: 100%;
-
-        .operation-item-list {
-          width: 85%;
-          margin-bottom: 1rem;
-          position: relative;
-          padding: 2px;
-          border: 1px #f2f2f2 solid;
-          border-radius: 25px;
-          box-shadow: 3px 3px 10px $boxShadowColor;
-          height: 70px;
-          background-color: #f2f2f2;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-
-          &:hover {
-            background-color: $colour-secondary-light;
-
-            i {
-              color: #9356dc;
-            }
-          }
-          .operation-item-list-number {
-            font-size: smaller;
-            position: absolute;
-            left: -10px;
-            width: 20px;
-            height: 20px;
-            background-color: #9356dc;
-            color: white;
-            border-radius: 100%;
-            text-align: center;
-          }
-          .testh3 {
-            width: 90%;
-            font-size: 0.8rem;
-            margin: 0;
-          }
-          .testI {
-            width: 10%;
-            margin-left: 1.5rem;
-            display: flex;
-            justify-content: center;
-            padding-right: 1rem;
-            color: grey;
-          }
+        height: 150px;
+      }
+      .card-new {
+        right: 14px;
+        border-radius: 3px;
+        background-color: $colour-tertiary;
+        color: $colour-tertiary-dark;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 30px;
+        position: absolute;
+        top: 14px;
+      }
+      &:hover {
+        .card-new {
+          animation: full-scale 500ms 200ms forwards;
         }
       }
     }
+    .list-restaurant-card-name {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin-left: 0.5rem;
+      height: fit-content;
+      margin-top: 10px;
 
-    .restaurant {
-      background-color: $colour-grey-little;
+      & > a {
+        width: 80%;
+        margin-bottom: 1rem;
 
-      .restaurant-name {
-        padding: 2rem 0 0 1rem;
-        font-size: 0.9rem;
-      }
-
-      .list-restaurant {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .list-restaurant-card {
-          position: relative;
-          box-shadow: 2px 2px 10px $boxShadowColor;
-          border-radius: 1rem 1rem 1rem 1rem;
-          width: 90%;
-          height: 230px;
-          margin: 0 0 1rem 0;
-          display: block;
-          flex-direction: column;
-          justify-content: center;
-          background-color: white;
-
-          .list-restaurant-card-img {
-            display: flex;
-            @include img-size;
-            border-radius: 1rem 1rem 0 0;
-            width: 100%;
-            height: 150px;
-          }
-          .card-new {
-            right: 14px;
-            border-radius: 3px;
-            background-color: $colour-tertiary;
-            color: $colour-tertiary-dark;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 80px;
-            height: 30px;
-            position: absolute;
-            top: 14px;
-          }
-          &:hover {
-            .card-new {
-              animation: full-scale 500ms 200ms forwards;
-            }
-          }
+        h3,
+        p {
+          margin: 0%;
+          margin-top: 5px;
+          font-size: 1.1rem;
         }
-        .list-restaurant-card-name {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          width: 90%;
-          margin-left: 0.5rem;
-          height: fit-content;
-          margin-top: 10px;
-
-          & > a {
-            width: 80%;
-
-            h3,
-            p {
-              margin: 0%;
-              margin-top: 5px;
-              font-size: 1.1rem;
-            }
-            p {
-              font-weight: 300;
-            }
-          }
+        p {
+          font-weight: 300;
         }
       }
     }
@@ -254,9 +237,6 @@ a {
   padding: 1.5rem 0 3rem 1.5rem;
 
   .footer-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     font-family: $Shrikand-font;
     font-size: 1rem;
     height: 35px;
@@ -266,7 +246,7 @@ a {
 
   .partner-footer {
     display: flex;
-    flex-direction: column;
+
     justify-content: space-around;
 
     .fa-utensils {
@@ -285,7 +265,7 @@ a {
 
   .mentions-footer {
     display: flex;
-    flex-direction: column;
+
     justify-content: space-around;
 
     & > a {
@@ -424,7 +404,7 @@ a {
             }
             &:hover {
               cursor: pointer;
-              
+
               .description {
                 width: 60%;
               }
