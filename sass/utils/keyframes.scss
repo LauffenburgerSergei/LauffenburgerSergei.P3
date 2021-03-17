@@ -5,9 +5,8 @@
 @keyframes full-scale {
   from {
     transform: scale(0);
-    
   }
-  
+
   100% {
     transform: scale(1);
   }
@@ -104,7 +103,6 @@
 }
 
 @keyframes rotate {
-  
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -112,5 +110,21 @@
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+  }
+}
+
+/*######################################################################*/
+/*############################### menu slide ###########################*/
+/*######################################################################*/
+
+
+@keyframes menu-slide-x {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }

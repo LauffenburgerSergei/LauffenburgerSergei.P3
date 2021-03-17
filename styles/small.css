@@ -248,6 +248,34 @@
   }
 }
 
+/*######################################################################*/
+/*############################### menu slide ###########################*/
+/*######################################################################*/
+@-webkit-keyframes menu-slide-x {
+  from {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes menu-slide-x {
+  from {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 /* ################################################################*/
 /* ############################ Police ############################*/
 /* ################################################################*/
@@ -436,6 +464,22 @@
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+  }
+}
+
+/*######################################################################*/
+/*############################### menu slide ###########################*/
+/*######################################################################*/
+@keyframes menu-slide-x {
+  from {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
   }
 }
 
@@ -707,6 +751,22 @@
   }
 }
 
+/*######################################################################*/
+/*############################### menu slide ###########################*/
+/*######################################################################*/
+@keyframes menu-slide-x {
+  from {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 /* ################################################################*/
 /* ############################ Police ############################*/
 /* ################################################################*/
@@ -856,5 +916,12 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.menu-card-dish {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=small.css.map */

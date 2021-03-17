@@ -16,6 +16,20 @@
   .main-intro {
     border-radius: 0 0 1rem 1rem;
   }
+  .main-intro .presentation {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
   .operation-list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -31,6 +45,23 @@
     border-radius: 1rem;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
+  }
+  .main-restaurant .img-card-menu {
+    border-radius: 2rem 2rem 0 0;
+  }
+  .main-restaurant .menu-card {
+    margin-bottom: 2rem;
+    border-radius: 0 0 2rem 2rem;
+  }
+  .main-restaurant .menu-card .menu-card-dish {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column {
+    width: 30%;
+    margin: 2rem;
   }
 }
 /*# sourceMappingURL=large.css.map */

@@ -16,7 +16,7 @@
 
     h2 {
       font-size: 1.4rem;
-      margin-top: 1rem;
+      
     }
 
     p {
@@ -60,5 +60,19 @@
     padding-top: 1.2rem;
   }
 
+  .operation-list {
+    flex-direction: row;
+    padding-bottom: 2rem;
 
+    .operation-item-list {
+      width: 65%;
+      margin: 2rem;
+    }
+  }
+
+  .menu-card-dish-column {
+    width: 65%;
+    margin: 1rem;
+    align-self: center;
+  }
 }

@@ -248,6 +248,34 @@
   }
 }
 
+/*######################################################################*/
+/*############################### menu slide ###########################*/
+/*######################################################################*/
+@-webkit-keyframes menu-slide-x {
+  from {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes menu-slide-x {
+  from {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 /* ################################################################*/
 /* ############################ Police ############################*/
 /* ################################################################*/
@@ -436,6 +464,22 @@
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+  }
+}
+
+/*######################################################################*/
+/*############################### menu slide ###########################*/
+/*######################################################################*/
+@keyframes menu-slide-x {
+  from {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
   }
 }
 
@@ -704,6 +748,22 @@
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+  }
+}
+
+/*######################################################################*/
+/*############################### menu slide ###########################*/
+/*######################################################################*/
+@keyframes menu-slide-x {
+  from {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
   }
 }
 
@@ -1215,10 +1275,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column {
@@ -1230,6 +1287,21 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 1rem;
+}
+
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column.depart-one {
+  -webkit-animation: menu-slide-x .4s;
+          animation: menu-slide-x .4s;
+}
+
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column.depart-two {
+  -webkit-animation: menu-slide-x .8s;
+          animation: menu-slide-x .8s;
+}
+
+.main-restaurant .menu-card .menu-card-dish .menu-card-dish-column.depart-three {
+  -webkit-animation: menu-slide-x 1.2s;
+          animation: menu-slide-x 1.2s;
 }
 
 .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-title {

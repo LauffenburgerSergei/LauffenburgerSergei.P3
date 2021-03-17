@@ -18,6 +18,14 @@
 
   .main-intro {
     border-radius: 0 0 1rem 1rem;
+
+    .presentation {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+    }
   }
 
   .operation-list {
@@ -33,5 +41,25 @@
     border-radius: 1rem;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .main-restaurant {
+    .img-card-menu {
+      border-radius: 2rem 2rem 0 0;
+    }
+
+    .menu-card {
+      margin-bottom: 2rem;
+      border-radius: 0 0 2rem 2rem;
+
+      .menu-card-dish {
+        flex-direction: row;
+
+        .menu-card-dish-column {
+          width: 30%;
+          margin: 2rem;
+        }
+      }
+    }
   }
 }

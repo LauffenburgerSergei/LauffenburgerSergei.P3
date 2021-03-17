@@ -335,12 +335,24 @@ a {
     }
     .menu-card-dish {
       display: flex;
-      flex-direction: column;
+      margin-bottom: 2rem;
 
       .menu-card-dish-column {
         display: flex;
         flex-direction: column;
         padding: 0 1rem;
+
+        &.depart-one {
+          animation: menu-slide-x .4s;
+        }
+
+        &.depart-two {
+          animation: menu-slide-x .8s;
+        }
+
+        &.depart-three {
+          animation: menu-slide-x 1.2s;
+        }
 
         .menu-card-dish-column-title {
           width: fit-content;
@@ -348,6 +360,7 @@ a {
           margin-bottom: 0.5rem;
           border-bottom: 3px solid #99e2d0;
           font-size: 0.9rem;
+          
         }
 
         .menu-card-dish-column-choice {
@@ -359,6 +372,7 @@ a {
           width: 100%;
           overflow: hidden;
           justify-content: space-between;
+          
 
           .description-price {
             display: flex;
