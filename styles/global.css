@@ -253,8 +253,8 @@
 /*######################################################################*/
 @-webkit-keyframes menu-slide-x {
   from {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
     opacity: 0;
   }
   to {
@@ -265,8 +265,8 @@
 }
 @keyframes menu-slide-x {
   from {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
     opacity: 0;
   }
   to {
@@ -472,8 +472,8 @@
 /*######################################################################*/
 @keyframes menu-slide-x {
   from {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
     opacity: 0;
   }
   to {
@@ -756,8 +756,8 @@
 /*######################################################################*/
 @keyframes menu-slide-x {
   from {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
     opacity: 0;
   }
   to {
@@ -1422,6 +1422,7 @@ a {
 
 .main-restaurant .menu-card .menu-card-dish .menu-card-dish-column .menu-card-dish-column-choice .description-price:hover .validate-check .fas {
   -webkit-animation: rotate 350ms linear;
+          animation: rotate 350ms linear;
 }
 
 .main-restaurant #container-order {
