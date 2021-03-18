@@ -848,7 +848,7 @@
           box-shadow: 5px 5px 20px #bebebe;
 }
 
-@media screen and (min-width: 10px) {
+@media screen and (max-width: 767px) {
   .header-index {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -889,6 +889,12 @@
     width: 90%;
     height: 230px;
   }
+  .depart-two {
+    width: 100%;
+  }
+  .depart-three {
+    width: 100%;
+  }
   /*######################################################################*/
   /*##############################  Footer  ##############################*/
   /*######################################################################*/
@@ -916,12 +922,11 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-
-.menu-card-dish {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  .menu-card-dish {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=small.css.map */

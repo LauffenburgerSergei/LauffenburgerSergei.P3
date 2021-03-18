@@ -8,7 +8,6 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   display: flex;
   justify-content: center;
@@ -21,7 +20,7 @@ a {
 
 .container {
   font-family: $Roboto-font;
-  width: 100%;
+  width: 100% !important;
 
   /*######################################################################*/
   /*##############################  Header  ##############################*/
@@ -29,8 +28,9 @@ a {
 
   .header-index {
     display: flex;
-    justify-content: center;
+    align-items: center;
     position: relative;
+    flex-direction: column;
 
     .header-logo {
       font-size: 1.9rem;
@@ -343,15 +343,15 @@ a {
         padding: 0 1rem;
 
         &.depart-one {
-          animation: menu-slide-x .4s;
+          animation: menu-slide-x 0.3s ease-out;
         }
 
         &.depart-two {
-          animation: menu-slide-x .8s;
+          animation: menu-slide-x 0.8s ease-out;
         }
 
         &.depart-three {
-          animation: menu-slide-x 1.2s;
+          animation: menu-slide-x 1.3s ease-out;
         }
 
         .menu-card-dish-column-title {
@@ -360,7 +360,6 @@ a {
           margin-bottom: 0.5rem;
           border-bottom: 3px solid #99e2d0;
           font-size: 0.9rem;
-          
         }
 
         .menu-card-dish-column-choice {
@@ -372,7 +371,6 @@ a {
           width: 100%;
           overflow: hidden;
           justify-content: space-between;
-          
 
           .description-price {
             display: flex;

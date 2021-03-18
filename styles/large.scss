@@ -1,3 +1,10 @@
+@import "../sass/utils/mixins.scss";
+@import "../sass/utils/variables.scss";
+@import "../sass/utils/keyframes.scss";
+@import "../sass/Components/heart.scss";
+@import "../sass/Components/loader.scss";
+@import "../sass/Components/Buttons.scss";
+
 @media screen and (min-width: 992px) {
   header,
   main {
@@ -58,9 +65,25 @@
         .menu-card-dish-column {
           width: 30%;
           margin: 2rem;
+          &.depart-two {
+            align-self: flex-start;
+          }
+
+          &.depart-three {
+            align-self: flex-start;
+          }
         }
       }
     }
   }
-}
 
+  /*######################################################################*/
+  /*##############################  Footer  ##############################*/
+  /*######################################################################*/
+
+  .footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
