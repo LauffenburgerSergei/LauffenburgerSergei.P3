@@ -2,21 +2,24 @@
 
 .heart {
   display: flex;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   position: relative;
 
   .fas {
     color: $colour-primary;
     position: absolute;
-    left: 0;
-    top: 0.15rem;
+
     transform: scale(0);
     transform-origin: bottom;
     animation-timing-function: ease-in-out;
   }
 
   &:hover > .fas {
+    cursor: pointer;
     animation: full-scale 500ms 100ms forwards;
+    left: 2.45px;
+    top: 2px;
+    font-size: 19px;
   }
 
   &:hover > .far {

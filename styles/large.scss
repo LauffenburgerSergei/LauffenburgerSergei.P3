@@ -27,11 +27,13 @@
     border-radius: 0 0 1rem 1rem;
 
     .presentation {
-      width: 70%;
+      width: 60%;
       display: flex;
       flex-direction: column;
       align-items: center;
       margin: 0 auto;
+      text-align: justify;
+      font-size: 0.9rem;
     }
   }
 

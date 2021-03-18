@@ -1,0 +1,247 @@
+/*######################################################################*/
+/*################################# heart  #############################*/
+/*######################################################################*/
+@-webkit-keyframes full-scale {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes full-scale {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/*@keyframes detail {
+  from,
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}*/
+/*######################################################################*/
+/*################################ loading  ############################*/
+/*######################################################################*/
+@-webkit-keyframes anim-ball {
+  from {
+    top: 100%;
+    height: 5px;
+    border-radius: 40px 40px 10px 10px;
+    -webkit-transform: scaleX(1.7);
+            transform: scaleX(1.7);
+  }
+  20% {
+    height: 20px;
+    border-radius: 50%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  to {
+    top: 0;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+@keyframes anim-ball {
+  from {
+    top: 100%;
+    height: 5px;
+    border-radius: 40px 40px 10px 10px;
+    -webkit-transform: scaleX(1.7);
+            transform: scaleX(1.7);
+  }
+  20% {
+    height: 20px;
+    border-radius: 50%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  to {
+    top: 0;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes anim-shadow {
+  from {
+    -webkit-transform: scale(0.8, 0.5);
+            transform: scale(0.8, 0.5);
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5);
+    opacity: 0.8;
+  }
+  to {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes anim-shadow {
+  from {
+    -webkit-transform: scale(0.8, 0.5);
+            transform: scale(0.8, 0.5);
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5);
+    opacity: 0.8;
+  }
+  to {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes anim-text {
+  from {
+    -webkit-transform: rotateX(1turn);
+            transform: rotateX(1turn);
+  }
+  60% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
+@keyframes anim-text {
+  from {
+    -webkit-transform: rotateX(1turn);
+            transform: rotateX(1turn);
+  }
+  60% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
+@-webkit-keyframes stop-loading {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+
+@keyframes stop-loading {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+
+@-webkit-keyframes main-loading {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
+@keyframes main-loading {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
+/*######################################################################*/
+/*################################# check  #############################*/
+/*######################################################################*/
+@-webkit-keyframes slideX {
+  from {
+    margin-right: -100px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+@keyframes slideX {
+  from {
+    margin-right: -100px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+/*######################################################################*/
+/*############################### menu slide ###########################*/
+/*######################################################################*/
+@-webkit-keyframes menu-slide-x {
+  from {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes menu-slide-x {
+  from {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=keyframes.css.map */
