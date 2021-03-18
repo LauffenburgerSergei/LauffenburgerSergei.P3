@@ -72,6 +72,16 @@
       margin-bottom: 2rem;
       border-radius: 0 0 2rem 2rem;
 
+      .title-menu-card {
+        margin-left: 3rem;
+        h2 {
+          width: 94%;
+        }
+        .heart {
+          width: 40px;
+        }
+      }
+
       .menu-card-dish {
         flex-direction: row;
 

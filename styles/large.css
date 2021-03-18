@@ -911,6 +911,15 @@
     margin-bottom: 2rem;
     border-radius: 0 0 2rem 2rem;
   }
+  .main-restaurant .menu-card .title-menu-card {
+    margin-left: 3rem;
+  }
+  .main-restaurant .menu-card .title-menu-card h2 {
+    width: 94%;
+  }
+  .main-restaurant .menu-card .title-menu-card .heart {
+    width: 40px;
+  }
   .main-restaurant .menu-card .menu-card-dish {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
