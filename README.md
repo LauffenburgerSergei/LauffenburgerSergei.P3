@@ -10,7 +10,7 @@ Logo et titres: Shrikhand
 Texte: Roboto</p>
 <p>Couleur primaire: #9356DC<br>
 Couleur secondaire: #FF79DA<br>
-Couleur tertiaie: #992D0</p>
+Couleur tertiaire: #992D0</p>
 <p>Technologies:<br>
 Le développement est fait en CSS, sans Javascript, aucun framekwork utilisé.<br>
 L'utilisation de SASS est un plus.<br>
