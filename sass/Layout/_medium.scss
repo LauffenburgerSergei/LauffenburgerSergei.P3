@@ -1,9 +1,9 @@
-@import "../sass/utils/mixins.scss";
-@import "../sass/utils/variables.scss";
-@import "../sass/utils/keyframes.scss";
-@import "../sass/Components/heart.scss";
-@import "../sass/Components/loader.scss";
-@import "../sass/Components/Buttons.scss";
+@import "../utils/_mixins.scss";
+@import "../utils/_variables.scss";
+@import "../utils/_keyframes.scss";
+@import "../Components/_heart.scss";
+@import "../Components/_loader.scss";
+@import "../Components/_buttons.scss";
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   /*######################################################################*/

@@ -1,9 +1,13 @@
-@import "../sass/utils/mixins.scss";
-@import "../sass/utils/variables.scss";
-@import "../sass/utils/keyframes.scss";
-@import "../sass/Components/heart.scss";
-@import "../sass/Components/loader.scss";
-@import "../sass/Components/Buttons.scss";
+@import "../sass/utils/_mixins.scss";
+@import "../sass/utils/_variables.scss";
+@import "../sass/utils/_keyframes.scss";
+@import "../sass/Components/_heart.scss";
+@import "../sass/Components/_loader.scss";
+@import "../sass/Components/_buttons.scss";
+
+@import "../sass/Layout/_small.scss";
+@import "../sass/Layout/_medium";
+@import "../sass/Layout/_large";
 
 * {
   box-sizing: border-box;
