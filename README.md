@@ -1,4 +1,4 @@
-# P3_LAUFFENBURGER_Sergei
+# P3_OhmyFood
 <p>Ce projet 3 est effectué dans le cadre de ma formation développeur web chez OpenClassrooms.</p>
 <p>Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration.<br>
 L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques.<br>
